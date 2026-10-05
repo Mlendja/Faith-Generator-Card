@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship with God Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="page">
+        <h1 id="head-one">Friendship with God</h1>
+
+        <section class="form-panel">
+            <div class="field">
+                <label for="occasion">Topic or Occasion</label>
+                <select id="occasion">
+                    <option value="Friendship with God" selected>Friendship with God</option>
+                    <option value="Growing Closer to God">Growing Closer to God</option>
+                    <option value="Gratitude and Trust">Gratitude and Trust</option>
+                    <option value="You Are Never Alone">You Are Never Alone</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="recipient">Recipient's Name</label>
+                <input type="text" id="recipient" placeholder="e.x: Jesus" maxlength="30">
+            </div>
+
+            <div class="field">
+                <label for="sender">Your Name</label>
+                <input type="text" id="sender" placeholder="e.x: Friend" maxlength="30">
+            </div>
+
+            <div class="field">
+                <label for="message">Personal Message</label>
+                <textarea id="message" rows="3" placeholder="Add a short personal note..." maxlength="100"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="theme">Card Theme</label>
+                <select id="theme">
+                    <option value="sunshine" selected>Golden Sunshine</option>
+                    <option value="sunset">Sunset</option>
+                    <option value="ocean">Ocean</option>
+                    <option value="meadow">Meadow</option>
+                    <option value="midnight">Midnight</option>
+                </select>
+            </div>
+
+            <button id="generateBtn" class="generateBtn" type="button">
+                <img class="btn-icon" src="../ai-technology.png" width="12" height="12" alt="" aria-hidden="true">
+                Generate
+                <img class="btn-icon" src="../ai-technology.png" width="12" height="12" alt="" aria-hidden="true">
+            </button>
+        </section>
+
+        <section class="card-panel">
+            <div id="card" class="card card--sunshine" aria-live="polite">
+                <div id="cardSparkles" class="card-sparkles"></div>
+                <p class="card-emoji" id="cardEmoji" aria-label="Yellow heart">&#128155;</p>
+                <p class="card-occasion" id="cardOccasion">Friendship with God</p>
+                <p class="card-body" id="cardBody">Friendship with God grows through honest prayer, quiet reflection, and trust. <br>
+                    Share your joys and worries, make room for gratitude, and raise that connection through everyday kindness.</p>
+                <p class="card-message" id="cardMessage"></p>
+                <p class="card-signature" id="cardSignature"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
